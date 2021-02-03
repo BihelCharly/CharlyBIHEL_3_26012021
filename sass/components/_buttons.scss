@@ -1,0 +1,39 @@
+.button--gradientPurple {
+    border-radius: 25px;
+    background: linear-gradient(0deg, $primary-color 0%, $secondary-color 100%);
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    @include shadow-under-lightGrey;
+}
+
+.button--grey {
+    border-radius: 20px;
+    background: $background-secondary;
+    color: black;
+    border: none;
+    padding: 23px 32px;
+    font-size: 16px;
+    @include shadow-under-lightGrey;
+}
+
+.button--lightPurple {
+    border-radius: 20px;
+    background: rgba($primary-color, .1);
+    color: black;
+    border: none;
+    padding: 23px 32px;
+    font-size: 16px;
+    @include shadow-under-lightGrey;
+}
+
+.button--white {
+    border-radius: 20px;
+    background: white;
+    color: black;
+    border: none;
+    padding: 10px 20px 10px 15px;
+    font-size: 16px;
+    @include shadow-under-lightGrey;
+}

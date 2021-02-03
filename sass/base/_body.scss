@@ -1,0 +1,77 @@
+/* STRUCTURE */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    @include my-body;
+    font-family: 'text';
+    font-size: 1em;
+}
+
+section,
+main {
+    width: 100%;
+}
+
+
+/* TITLES SIZES */
+
+h1,
+h2 {
+    font-size: $title-size-big;
+    margin: inherit;
+}
+
+h3,
+h4 {
+    font-size: $title-size-med;
+    padding-left: 20px;
+    margin: inherit;
+}
+
+h5,
+h6 {
+    font-size: $title-size-sma;
+    margin: inherit;
+}
+
+
+/* TTILES STYLES */
+
+h1,
+h5 {
+    font-family: 'title';
+}
+
+h2,
+h3,
+h4 {
+    font-family: 'text-bold';
+}
+
+
+/* LINKS & LISTS STYLES */
+
+a,
+button {
+    cursor: pointer;
+}
+
+a,
+li,
+ul,
+ol {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul,
+li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

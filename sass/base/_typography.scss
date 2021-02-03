@@ -1,0 +1,39 @@
+/*Roboto*/
+
+@font-face {
+    font-family: 'text';
+    src: url('../../sources/fonts/Roboto-Regular.ttf') format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'text-bold';
+    src: url("../../sources/fonts/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'text-medium';
+    src: url("../../sources/fonts/Roboto-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: 900;
+}
+
+@font-face {
+    font-family: 'text-light';
+    src: url("../../sources/fonts/Roboto-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: 800;
+}
+
+
+/*Shrikhand*/
+
+@font-face {
+    font-family: 'title';
+    src: url('../../sources/fonts/Shrikhand-Regular.ttf') format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}

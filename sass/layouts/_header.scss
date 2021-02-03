@@ -1,0 +1,26 @@
+.header-block {
+    @include flex-column;
+}
+
+.header__title {
+    @include shadow-under-lightGrey;
+    font-family: 'title';
+    text-align: center;
+    padding: 20px 0 5px 0;
+    z-index: 2;
+}
+
+.header__location {
+    background: $background-third;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 15px;
+    color: $darkgrey;
+    width: 100%;
+    z-index: 1;
+}
+
+.header__location>.fa-map-marker-alt {
+    margin-right: 15px;
+}

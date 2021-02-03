@@ -1,0 +1,40 @@
+@mixin my-body {
+    background-color: white;
+    font-size: 1em;
+    max-width: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* FLEX */
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-center {
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+@mixin shadow-under-black {
+    box-shadow: 0px 3px 5px 0px black;
+}
+
+@mixin shadow-under-grey {
+    box-shadow: 0px 5px 6px 0px grey;
+}
+
+@mixin shadow-under-lightGrey {
+    box-shadow: 0px 5px 6px 0px lightgrey;
+}

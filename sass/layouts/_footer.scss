@@ -1,0 +1,29 @@
+footer {
+    padding: 20px 0 20px 0px;
+    margin: 0px;
+    background-color: $darkgrey;
+    color: white;
+    padding-bottom: 30px;
+}
+
+footer>* {
+    padding-left: 20px;
+}
+
+ul li {
+    padding-bottom: 5px;
+}
+
+.footer-block {
+    height: 175px;
+    @include flex-column;
+    justify-content: space-around;
+}
+
+.fa-utensils+a {
+    margin-left: 9px;
+}
+
+.fa-hands-helping+a {
+    margin-left: 3px;
+}

@@ -1,0 +1,43 @@
+.works-block {
+    padding: 30px 0 30px 0;
+}
+
+.works-list {
+    @include flex-column;
+    justify-content: space-around;
+    align-items: center;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.works-list__elements {
+    display: flex;
+    align-items: center;
+    width: 80%;
+}
+
+.works-list__label {
+    margin-right: -15px;
+    color: white;
+    background-color: $primary-color;
+    padding: 3px 9px 3px 9px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.button-list {
+    width: 100%;
+    font-family: 'text-medium';
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+.button--grey>i {
+    color: grey;
+}
+
+.button--lightPurple>i {
+    color: $primary-color;
+}

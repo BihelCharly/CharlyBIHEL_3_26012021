@@ -1,0 +1,12 @@
+.explore-block {
+    @include flex-column;
+    @include flex-center;
+    background-color: $background-secondary;
+    text-align: center;
+    padding: 40px;
+}
+
+.explore__description {
+    font-family: 'text-light';
+    margin-bottom: 30px;
+}
