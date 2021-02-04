@@ -24,14 +24,14 @@
     margin-bottom: 15px;
 }
 
-.restaurants-cards-containers {
+.cards-containers {
     @include flex-column;
     @include shadow-under-lightGrey;
     border-radius: 20px;
     background-color: white;
 }
 
-.restaurants-cards-containers span {
+.cards-containers span {
     color: white;
     background-color: $third-color;
     padding: 2px 10px 2px 10px;
@@ -42,23 +42,23 @@
     cursor: default;
 }
 
-.restaurants-cards__photos img {
+.card__photo img {
     height: 200px;
     width: 100%;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
 }
 
-.restaurants-cards__description {
+.card__description {
     padding: 10px 0px 15px 20px;
 }
 
-.restaurants-cards__description>h6 {
+.card__description>h6 {
     font-family: 'text-bold';
     padding-bottom: 5px;
 }
 
-.restaurants-cards__description p {
+.card__description p {
     font-family: 'text-light';
     margin: 0;
     padding: 0;

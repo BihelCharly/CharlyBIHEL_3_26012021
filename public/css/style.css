@@ -10,15 +10,12 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: white;
-  font-size: 1em;
-  max-width: 100%;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
   font-family: "text";
   font-size: 1em;
+  max-width: 100%;
+  background-color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 section,
@@ -26,36 +23,38 @@ main {
   width: 100%;
 }
 
-/* TITLES SIZES */
-h1,
-h2 {
+/* INDEX TITLES STYLES & SIZES */
+.index h1,
+.index h2 {
+  font-family: "text-bold";
   font-size: 1.8em;
   margin: inherit;
 }
 
-h3,
-h4 {
-  font-size: 1.6em;
+.index h2 {
   padding-left: 20px;
-  margin: inherit;
 }
 
-h5,
-h6 {
+.index h3,
+.index h4 {
+  font-family: "text-medium";
   font-size: 1.3em;
   margin: inherit;
 }
 
-/* TTILES STYLES */
-h1,
-h5 {
+/* IMENU TITLES STYLES & SIZES */
+.menu h1 {
   font-family: "title";
+  padding-left: 20px;
 }
 
-h2,
-h3,
-h4 {
-  font-family: "text-bold";
+.menu h2 {
+  font-family: "text-light";
+  font-size: 1.3em;
+  width: 10%;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #99E2D0;
 }
 
 /* LINKS & LISTS STYLES */
@@ -158,6 +157,7 @@ li {
 
 .header__title {
   box-shadow: 0px 5px 6px 0px lightgrey;
+  font-size: 1.8em;
   font-family: "title";
   text-align: center;
   padding: 20px 0 5px 0;
@@ -222,7 +222,7 @@ li {
   margin-bottom: 15px;
 }
 
-.restaurants-cards-containers {
+.cards-containers {
   display: flex;
   flex-direction: column;
   box-shadow: 0px 5px 6px 0px lightgrey;
@@ -230,7 +230,7 @@ li {
   background-color: white;
 }
 
-.restaurants-cards-containers span {
+.cards-containers span {
   color: white;
   background-color: #99E2D0;
   padding: 2px 10px 2px 10px;
@@ -241,33 +241,33 @@ li {
   cursor: default;
 }
 
-.restaurants-cards__photos img {
+.card__photo img {
   height: 200px;
   width: 100%;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
 
-.restaurants-cards__description {
+.card__description {
   padding: 10px 0px 15px 20px;
 }
 
-.restaurants-cards__description > h6 {
+.card__description > h6 {
   font-family: "text-bold";
   padding-bottom: 5px;
 }
 
-.restaurants-cards__description p {
+.card__description p {
   font-family: "text-light";
   margin: 0;
   padding: 0;
 }
 
-.works-block {
+.work-block {
   padding: 30px 0 30px 0;
 }
 
-.works-list {
+.work-list {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -276,13 +276,13 @@ li {
   margin-top: 20px;
 }
 
-.works-list__elements {
+.work-selection {
   display: flex;
   align-items: center;
   width: 80%;
 }
 
-.works-list__label {
+.selection__label {
   margin-right: -15px;
   color: white;
   background-color: #9356DC;
@@ -291,7 +291,7 @@ li {
   z-index: 1;
 }
 
-.button-list {
+.selection__button {
   width: 100%;
   font-family: "text-medium";
   display: flex;
@@ -331,6 +331,11 @@ ul li {
   justify-content: space-around;
 }
 
+.footer-block > p {
+  font-family: "title";
+  font-size: 1.3em;
+}
+
 .fa-utensils + a {
   margin-left: 9px;
 }
@@ -346,12 +351,12 @@ ul li {
   width: 100%;
 }
 
-.menu-bg {
+.menu-photo {
   width: 100%;
   z-index: 2;
 }
 
-.menu-bg > img {
+.menu-photo > img {
   object-fit: cover;
   height: 100%;
   width: 100%;
@@ -361,17 +366,13 @@ ul li {
   background-color: #F2F2F2;
   border-radius: 25px 25px 0 0;
   margin-top: -50px;
-  padding-top: 80px;
+  padding-top: 10px;
   z-index: 3;
 }
 
-.menu-block > h3 {
-  font-family: "title";
-}
-
-.starters-list,
-.dishes-list,
-.desserts-list {
+.starters,
+.dishes,
+.desserts {
   height: 325px;
   display: flex;
   flex-direction: column;
@@ -380,70 +381,60 @@ ul li {
   margin: 25px 0 40px 0;
 }
 
-.starters-list-containers,
-.dishes-list-containers,
-.desserts-list-containers {
+.starters-card,
+.dishes-card,
+.desserts-card {
   width: 95%;
 }
 
-.starters-list-containers > p,
-.dishes-list-containers > p,
-.desserts-list-containers > p {
-  width: 10%;
-  margin-left: 10px;
-  margin-bottom: 20px;
-  border-bottom: 3px solid #99E2D0;
-  font-family: "text-light";
-}
-
-.starters-list-containers a,
-.dishes-list-containers a,
-.desserts-list-containers a {
+.starters-card a,
+.dishes-card a,
+.desserts-card a {
   width: 100%;
 }
 
-.starters-list__button,
-.dishes-list__button,
-.desserts-list__button {
+.starters__button,
+.dishes__button,
+.desserts__button {
   display: flex;
   flex-direction: column;
   width: 100%;
   font-family: "text-medium";
 }
 
-.starters-button__description,
-.dishes-button__description,
-.desserts-button__description {
+.starters__description,
+.dishes__description,
+.desserts__description {
   display: grid;
   grid-template-columns: 90% 10%;
 }
 
-.starters-button__description p:nth-child(1),
-.dishes-button__description p:nth-child(1),
-.desserts-button__description p:nth-child(1) {
+.starters__description p:nth-child(1),
+.dishes__description p:nth-child(1),
+.desserts__description p:nth-child(1) {
   grid-column: 1;
   grid-row: 1;
 }
 
-.starters-button__description p:nth-child(2),
-.dishes-button__description p:nth-child(2),
-.desserts-button__description p:nth-child(2) {
+.starters__description p:nth-child(2),
+.dishes__description p:nth-child(2),
+.desserts__description p:nth-child(2) {
   grid-column: 1;
   grid-row: 2;
   font-family: "text-light";
 }
 
-.starters-button__description span,
-.dishes-button__description span,
-.desserts-button__description span {
+.starters__description span,
+.dishes__description span,
+.desserts__description span {
   grid-column: 2;
   grid-row: 2;
   color: #383838;
 }
 
-.starters-button__description p,
-.dishes-button__description p,
-.desserts-button__description p {
+.starters__description p,
+.dishes__description p,
+.desserts__description p {
   margin: 3px 0 3px 0;
   padding: 0;
 }
@@ -453,4 +444,4 @@ ul li {
   padding: 10px 0 80px 0;
 }
 
-/*# sourceMappingURL=style_mobile.css.map */
+/*# sourceMappingURL=style.css.map */

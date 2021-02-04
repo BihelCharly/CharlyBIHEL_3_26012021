@@ -4,6 +4,7 @@
 
 .header__title {
     @include shadow-under-lightGrey;
+    font-size: $title-size-big;
     font-family: 'title';
     text-align: center;
     padding: 20px 0 5px 0;

@@ -1,8 +1,8 @@
-.works-block {
+.work-block {
     padding: 30px 0 30px 0;
 }
 
-.works-list {
+.work-list {
     @include flex-column;
     justify-content: space-around;
     align-items: center;
@@ -10,13 +10,13 @@
     margin-top: 20px;
 }
 
-.works-list__elements {
+.work-selection {
     display: flex;
     align-items: center;
     width: 80%;
 }
 
-.works-list__label {
+.selection__label {
     margin-right: -15px;
     color: white;
     background-color: $primary-color;
@@ -25,7 +25,7 @@
     z-index: 1;
 }
 
-.button-list {
+.selection__button {
     width: 100%;
     font-family: 'text-medium';
     display: flex;

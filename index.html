@@ -8,12 +8,8 @@
     <meta name="Content-Type-Style" content="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./sources/logo/ohmyfood@2x.svg" type="image/icon">
-    <!-- CSS Desktop -->
-    <link rel="stylesheet" type="text/css" href="./public/css/style_desktop.css" />
-    <!-- CSS Pad  -->
-    <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1024px)" type="text/css" href="./public/css/style_tablette.css" />
-    <!-- CSS Smartphone  -->
-    <link rel="stylesheet" media="all and (min-width: 1px) and (max-width: 767px)" type="text/css" href="./public/css/style_mobile.css" />
+    <!-- CSS  -->
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
     <!-- TITLE -->
     <title>ohmyfood - Votre réstaurant à Paris</title>
     <!-- ICONS LIBRARY -->
@@ -25,9 +21,7 @@
     <header>
         <div class="header-block">
             <div class="header__title">
-                <a href=index.html>
-                    <h1>ohmyfood</h1>
-                </a>
+                <a href=index.html>ohmyfood</a>
             </div>
             <div class="header__location">
                 <i class="fas fa-map-marker-alt"></i>
@@ -37,64 +31,57 @@
     </header>
 
     <!-- MAIN -->
-    <main>
-        <!-- EXPLORE -->
+    <main class="index">
+        <!-- EXPLORE SECTION -->
         <section id="section-explore">
             <div class="explore-block">
                 <div class="explore__description">
-                    <h2>Réservez le menu qui vous convient</h2>
+                    <h1>Réservez le menu qui vous convient</h1>
                     <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
                 </div>
                 <button class="explore__button button--gradientPurple" type="button">Explorer nos restaurants</button>
             </div>
         </section>
 
-        <!-- WORKS -->
-        <section id="section-works">
-            <div class="works-block">
-                <h3>Fonctionnement</h3>
-                <div class="works-list">
-                    <div class="works-list__elements">
-                        <span class="works-list__label">1</span>
-                        <a href="/test.html" class="button-list button--grey">
-                            <i class="fas fa-mobile-alt"></i>Choissisez un restaurant
-                        </a>
+        <!-- WORK SECTION -->
+        <section id="section-work">
+            <div class="work-block">
+                <h2>Fonctionnement</h2>
+                <div class="work-list">
+                    <div class="work-selection">
+                        <span class="selection__label">1</span>
+                        <a href="/work-selection.html" class="selection__button button--grey"><i class="fas fa-mobile-alt"></i>Choissisez un restaurant</a>
                     </div>
-                    <div class="works-list__elements">
-                        <span class="works-list__label">2</span>
-                        <a href="/test.html" class="button-list button--grey">
-                            <i class="fas fa-list-ul"></i>Composez votre menu
-                        </a>
+                    <div class="work-selection">
+                        <span class="selection__label">2</span>
+                        <a href="/work-selection.html" class="selection__button button--grey"><i class="fas fa-list-ul"></i>Composez votre menu</a>
                     </div>
-                    <div class="works-list__elements">
-                        <span class="works-list__label">3</span>
-                        <a href="/test.html" class="button-list button--lightPurple">
-                            <i class="fas fa-store"></i>Dégustez au restaurant
-                        </a>
+                    <div class="work-selection">
+                        <span class="selection__label">3</span><a href="/work-selection.html" class="selection__button button--lightPurple"><i class="fas fa-store"></i>Dégustez au restaurant</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- RESTAURANTS -->
+        <!-- RESTAURANTS SECTION -->
         <section id="section-restaurants">
             <div class="restaurants-block">
                 <!-- TITLE-->
-                <h3>Restaurants</h3>
-                <!-- CARDS/CONTAINERS FROM restaurants -->
+                <h2>Restaurants</h2>
+                <!-- CARDS/CONTAINERS FROM RESTAURANTS -->
                 <div class="restaurants-cards">
 
                     <!-- CONTAINER 1 -->
                     <a href="#1">
-                        <div class="restaurants-cards-containers">
+                        <div class="cards-containers">
                             <!-- CONTAINER 1 IMG -->
-                            <span class="restaurants-cards__label">Nouveau</span>
-                            <div class="restaurants-cards__photos">
+                            <span class="card__label">Nouveau</span>
+                            <div class="card__photo">
                                 <img src="./sources/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo La palette du goût" title="Photo La palette du goût" />
                             </div>
                             <!-- CONTAINER 1 DESCRIPTION -->
-                            <div class="restaurants-cards__description">
-                                <h6>La palette du goût</h6>
+                            <div class="card__description">
+                                <h3>La palette du goût</h3>
                                 <p>Ménilmontant</p>
                             </div>
                         </div>
@@ -103,15 +90,15 @@
 
                     <!-- CONTAINER 2 -->
                     <a href="#2">
-                        <div class="restaurants-cards-containers">
+                        <div class="cards-containers">
                             <!-- CONTAINER 2 IMG -->
-                            <span class="restaurants-cards__label">Nouveau</span>
-                            <div class="restaurants-cards__photos">
+                            <span class="card__label">Nouveau</span>
+                            <div class="card__photo">
                                 <img src="./sources/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo La note enchantée" title="Photo La note enchantée" />
                             </div>
                             <!-- CONTAINER 2 DESCRIPTION -->
-                            <div class="restaurants-cards__description">
-                                <h6>La note enchantée</h6>
+                            <div class="card__description">
+                                <h3>La note enchantée</h3>
                                 <p>Charonne</p>
                             </div>
                         </div>
@@ -120,14 +107,14 @@
 
                     <!-- CONTAINER 3 -->
                     <a href="./menu_3.html">
-                        <div class="restaurants-cards-containers">
+                        <div class="cards-containers">
                             <!-- CONTAINER 3 IMG -->
-                            <div class="restaurants-cards__photos">
+                            <div class="card__photo">
                                 <img src="./sources/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo À la française" title="Photo À la française" />
                             </div>
                             <!-- CONTAINER 3 DESCRIPTION -->
-                            <div class="restaurants-cards__description">
-                                <h6>À la française</h6>
+                            <div class="card__description">
+                                <h3>À la française</h3>
                                 <p>Cité Rouge</p>
                             </div>
                         </div>
@@ -136,14 +123,14 @@
 
                     <!-- CONTAINER 4 -->
                     <a href="#4">
-                        <div class="restaurants-cards-containers">
+                        <div class="cards-containers">
                             <!-- CONTAINER 4 IMG -->
-                            <div class="restaurants-cards__photos">
+                            <div class="card__photo">
                                 <img src="./sources/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo Le délice des sans" title="Photo Le délice des sans" />
                             </div>
                             <!-- CONTAINER 4 DESCRIPTION -->
-                            <div class="restaurants-cards__description">
-                                <h6>Le délice des sens</h6>
+                            <div class="card__description">
+                                <h3>Le délice des sens</h3>
                                 <p>Folie-Méricourt</p>
                             </div>
                         </div>
@@ -157,21 +144,21 @@
     <!-- FOOTER -->
     <footer>
         <div class="footer-block">
-            <h5>ohmyfood</h5>
+            <p>ohmyfood</p>
             <ul>
                 <li>
                     <i class="fas fa-xs fa-utensils"></i>
-                    <a>Proposer un restaurant</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=infos@ohmyfood.com" target="_blank">Proposer un restaurant</a>
                 </li>
                 <li>
                     <i class="fas fa-xs fa-hands-helping"></i>
-                    <a>Devenir partenaire</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=partners@ohmyfood.com" target="_blank">Devenir partenaire</a>
                 </li>
                 <li>
                     <a>Mentions légales</a>
                 </li>
                 <li>
-                    <a>Contact</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contact@ohmyfood.com" target="_blank">Contact</a>
                 </li>
             </ul>
         </div>

@@ -8,62 +8,56 @@
     <meta name="Content-Type-Style" content="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./sources/logo/ohmyfood@2x.svg" type="image/icon">
-    <!-- CSS Desktop -->
-    <link rel="stylesheet" type="text/css" href="./public/css/style_desktop.css" />
-    <!-- CSS Pad  -->
-    <link rel="stylesheet" media="all and (min-width: 768px) and (max-width: 1024px)" type="text/css" href="./public/css/style_tablette.css" />
-    <!-- CSS Smartphone  -->
-    <link rel="stylesheet" media="all and (min-width: 1px) and (max-width: 767px)" type="text/css" href="./public/css/style_mobile.css" />
+    <!-- CSS  -->
+    <link rel="stylesheet" type="text/css" href="./public/css/style.css" />
     <!-- TITLE -->
-    <title>ohmyfood - Votre réstaurant à Paris</title>
+    <title>ohmyfood - À la française</title>
     <!-- ICONS LIBRARY -->
     <script src="https://kit.fontawesome.com/dcf4d39fa0.js" crossorigin="anonymous"></script>
 </head>
-
 
 <body>
     <!-- HEADER -->
     <header>
         <div class="header-block">
             <div class="header__title">
-                <a href=index.html>
-                    <h1>ohmyfood</h1>
-                </a>
+                <a href=index.html>ohmyfood</a>
             </div>
         </div>
     </header>
 
-    <main>
+    <main class="menu">
         <section class="section-menu">
-            <div class="menu-bg">
+            <div class="menu-photo">
                 <img src="./sources/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo À la française" title="Photo À la française" />
             </div>
             <div class="menu-block">
-                <h3>À la française</h3>
-                <!-- startersS -->
-                <div class="starters-list">
-                    <div class="starters-list-containers">
-                        <p>ENTRÉES</p>
-                        <a class="starters-list__button button--white">
-                            <div class="starters-button__description">
+                <h1>À la française</h1>
+
+                <!-- STARTERS -->
+                <div class="starters">
+                    <div class="starters-card">
+                        <h2>ENTRÉES</h2>
+                        <a class="starters__button button--white">
+                            <div class="starters__description">
                                 <p>Tartare de pouple acidulé</p>
                                 <p>Aux zests d'orange</p>
                                 <span>25€</span>
                             </div>
                         </a>
                     </div>
-                    <div class="starters-list-containers">
-                        <a class="starters-list__button button--white">
-                            <div class="starters-button__description">
+                    <div class="starters-card">
+                        <a class="starters__button button--white">
+                            <div class="starters__description">
                                 <p>Velouté de légumes d'antan</p>
                                 <p>Carotte, panais,tobinambour</p>
                                 <span>35€</span>
                             </div>
                         </a>
                     </div>
-                    <div class="starters-list-containers">
-                        <a class="starters-list__button button--white">
-                            <div class="starters-button__description">
+                    <div class="starters-card">
+                        <a class="starters__button button--white">
+                            <div class="starters__description">
                                 <p>Soupe à l'oignon</p>
                                 <p>Revisité</p>
                                 <span>20€</span>
@@ -73,30 +67,29 @@
                 </div>
 
                 <!-- DISHES-->
-
-                <div class="dishes-list">
-                    <div class="dishes-list-containers">
-                        <p>PLATS</p>
-                        <a class="dishes-list__button button--white">
-                            <div class="dishes-button__description">
+                <div class="dishes">
+                    <div class="dishes-card">
+                        <h2>PLATS</h2>
+                        <a class="dishes__button button--white">
+                            <div class="dishes__description">
                                 <p>Coquilles Saint-Jacques</p>
                                 <p>Accompagnées d'une purée de panais</p>
                                 <span>40€</span>
                             </div>
                         </a>
                     </div>
-                    <div class="dishes-list-containers">
-                        <a class="dishes-list__button button--white">
-                            <div class="dishes-button__description">
+                    <div class="dishes-card">
+                        <a class="dishes__button button--white">
+                            <div class="dishes__description">
                                 <p>Magret de canard</p>
                                 <p>En parmentier de pommes de terres</p>
                                 <span>35€</span>
                             </div>
                         </a>
                     </div>
-                    <div class="dishes-list-containers">
-                        <a class="dishes-list__button button--white">
-                            <div class="dishes-button__description">
+                    <div class="dishes-card">
+                        <a class="dishes__button button--white">
+                            <div class="dishes__description">
                                 <p>Pigonneau d'Ille-et-Vilaine</p>
                                 <p>Sur son lit de gnocchis aux légumes</p>
                                 <span>44€</span>
@@ -106,30 +99,29 @@
                 </div>
 
                 <!-- DESSERTS-->
-
-                <div class="desserts-list">
-                    <div class="desserts-list-containers">
-                        <p>DÉSSERTS</p>
-                        <a class="desserts-list__button button--white">
-                            <div class="desserts-button__description">
+                <div class="desserts">
+                    <div class="desserts-card">
+                        <h2>DÉSSERTS</h2>
+                        <a class="desserts__button button--white">
+                            <div class="desserts__description">
                                 <p>Pétales de violettes glacés</p>
                                 <p>Et purée de noisettes</p>
                                 <span>18€</span>
                             </div>
                         </a>
                     </div>
-                    <div class="desserts-list-containers">
-                        <a class="desserts-list__button button--white">
-                            <div class="desserts-button__description">
+                    <div class="desserts-card">
+                        <a class="desserts__button button--white">
+                            <div class="desserts__description">
                                 <p>Fondant au chocolat</p>
                                 <p>Revisité</p>
                                 <span>22€</span>
                             </div>
                         </a>
                     </div>
-                    <div class="desserts-list-containers">
-                        <a class="desserts-list__button button--white">
-                            <div class="desserts-button__description">
+                    <div class="desserts-card">
+                        <a class="desserts__button button--white">
+                            <div class="desserts__description">
                                 <p>Millefeuille croustillant</p>
                                 <p>Myrtilles et pâte d'amande</p>
                                 <span>23€</span>
@@ -138,8 +130,9 @@
                     </div>
                 </div>
 
+                <!-- ORDER-->
                 <div class="order-block">
-                    <button class="order-block__button button--gradientPurple" type="button">Commander</button>
+                    <button class="order__button button--gradientPurple" type="button">Commander</button>
                 </div>
             </div>
         </section>
@@ -148,21 +141,21 @@
 
     <footer>
         <div class="footer-block">
-            <h5>ohmyfood</h5>
+            <p>ohmyfood</p>
             <ul>
                 <li>
                     <i class="fas fa-xs fa-utensils"></i>
-                    <a>Proposer un restaurant</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=infos@ohmyfood.com" target="_blank">Proposer un restaurant</a>
                 </li>
                 <li>
                     <i class="fas fa-xs fa-hands-helping"></i>
-                    <a>Devenir partenaire</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=partners@ohmyfood.com" target="_blank">Devenir partenaire</a>
                 </li>
                 <li>
                     <a>Mentions légales</a>
                 </li>
                 <li>
-                    <a>Contact</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=contact@ohmyfood.com" target="_blank">Contact</a>
                 </li>
             </ul>
         </div>

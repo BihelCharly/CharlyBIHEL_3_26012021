@@ -8,11 +8,11 @@
 @import "./components/_buttons";
 @import "./layouts/_header";
 @import "./layouts/_nav";
-@import "./layouts/explore";
-@import './layouts/restaurants';
-@import './layouts/works';
+@import "./components/explore";
+@import './components/restaurants';
+@import './components/work';
 @import './layouts/footer';
 
 /*MENU*/
 
-@import './layouts/menu'
+@import './components/menu'

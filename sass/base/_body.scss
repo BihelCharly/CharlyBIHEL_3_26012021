@@ -7,9 +7,12 @@
 body {
     margin: 0;
     padding: 0;
-    @include my-body;
     font-family: 'text';
     font-size: 1em;
+    max-width: 100%;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 section,
@@ -18,39 +21,41 @@ main {
 }
 
 
-/* TITLES SIZES */
+/* INDEX TITLES STYLES & SIZES */
 
-h1,
-h2 {
+.index h1,
+.index h2 {
+    font-family: 'text-bold';
     font-size: $title-size-big;
     margin: inherit;
 }
 
-h3,
-h4 {
-    font-size: $title-size-med;
+.index h2 {
     padding-left: 20px;
-    margin: inherit;
 }
 
-h5,
-h6 {
+.index h3,
+.index h4 {
+    font-family: 'text-medium';
     font-size: $title-size-sma;
     margin: inherit;
 }
 
 
-/* TTILES STYLES */
+/* IMENU TITLES STYLES & SIZES */
 
-h1,
-h5 {
+.menu h1 {
     font-family: 'title';
+    padding-left: 20px;
 }
 
-h2,
-h3,
-h4 {
-    font-family: 'text-bold';
+.menu h2 {
+    font-family: 'text-light';
+    font-size: $title-size-sma;
+    width: 10%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid $third-color;
 }
 
 

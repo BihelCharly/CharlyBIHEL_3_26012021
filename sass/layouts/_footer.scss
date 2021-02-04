@@ -20,6 +20,11 @@ ul li {
     justify-content: space-around;
 }
 
+.footer-block>p {
+    font-family: 'title';
+    font-size: $title-size-sma;
+}
+
 .fa-utensils+a {
     margin-left: 9px;
 }
