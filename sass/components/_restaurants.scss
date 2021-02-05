@@ -1,12 +1,15 @@
 /* Restaurants containers */
 
+#section-restaurants {
+    margin-top: 50px;
+}
+
 .restaurants-block {
     background-color: $background-secondary;
     @include flex-column;
     align-content: center;
     height: 100%;
     width: 100%;
-    margin-top: 50px;
 }
 
 .restaurants-cards {
@@ -14,7 +17,6 @@
     margin-top: 15px;
     align-self: center;
     width: 90%;
-    height: 85%;
     margin-bottom: 50px;
 }
 
@@ -24,20 +26,20 @@
     margin-bottom: 15px;
 }
 
-.cards-containers {
+.card-container {
     @include flex-column;
     @include shadow-under-lightGrey;
     border-radius: 20px;
     background-color: white;
 }
 
-.cards-containers span {
-    color: white;
+.card__label {
+    color: green;
     background-color: $third-color;
     padding: 2px 10px 2px 10px;
     border: solid transparent 1px;
     position: absolute;
-    right: 35px;
+    right: 10%;
     margin: 15px 0px 5px 0px;
     cursor: default;
 }
@@ -62,4 +64,72 @@
     font-family: 'text-light';
     margin: 0;
     padding: 0;
+}
+
+@media (min-width: 768px) {
+    .restaurants-cards {
+        margin-top: 15px;
+        align-self: center;
+        width: 80%;
+    }
+    .restaurants-cards>a {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .card__label {
+        padding: 2px 10px 2px 10px;
+        right: 12%;
+        margin: 15px 0px 5px 0px;
+    }
+    .card__photo img {
+        height: 320px;
+    }
+}
+
+@media (min-width: 1025px) {
+    #section-restaurants {
+        margin-top: 30px;
+    }
+    .restaurants-block {
+        padding-top: 30px;
+    }
+    .restaurants-cards {
+        display: grid;
+        column-gap: 55px;
+        row-gap: 20px;
+        width: 80%;
+        margin-top: 30px;
+    }
+    .restaurants-cards>a {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+    .card1,
+    .card2 {
+        grid-row: 1;
+    }
+    .card3,
+    .card4 {
+        grid-row: 2;
+    }
+    .card1,
+    .card3 {
+        grid-column: 1;
+    }
+    .card2,
+    .card4 {
+        grid-column: 2;
+    }
+    .card__label {
+        padding: 2px 10px 2px 10px;
+        margin: 15px 0px 5px 0px;
+    }
+    .card__photo img {
+        height: 260px;
+    }
+    .card__photo img {
+        padding: 5px;
+        background-color: white;
+    }
 }

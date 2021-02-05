@@ -10,3 +10,10 @@
     font-family: 'text-light';
     margin-bottom: 30px;
 }
+
+@media (min-width: 768px) {
+    .explore-block {
+        text-align: initial;
+        padding: 50px;
+    }
+}
