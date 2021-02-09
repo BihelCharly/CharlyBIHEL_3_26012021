@@ -48,3 +48,9 @@
         @include shadow-under-lightGrey;
     }
 }
+
+@media (min-width: 1025px) {
+    .button--gradientPurple {
+        font-size: 30px;
+    }
+}

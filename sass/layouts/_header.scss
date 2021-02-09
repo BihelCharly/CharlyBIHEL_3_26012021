@@ -7,8 +7,22 @@
     font-size: $title-size-big;
     font-family: 'title';
     text-align: center;
-    padding: 20px 0 5px 0;
+    padding: 15px 0 5px 0;
     z-index: 2;
+}
+
+.header-menu {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    & a:first-child {
+        position: absolute;
+        left: 20px;
+        color: $darkgrey;
+         :hover {
+            color: $primary-color;
+        }
+    }
 }
 
 .header__location {
@@ -20,10 +34,9 @@
     color: $darkgrey;
     width: 100%;
     z-index: 1;
-}
-
-.header__location>.fa-map-marker-alt {
-    margin-right: 15px;
+    &>.fa-map-marker-alt {
+        margin-right: 15px;
+    }
 }
 
 @media (min-width: 768px) {
@@ -38,9 +51,9 @@
         top: 0;
         background-color: white;
         width: 100%;
-    }
-    .header__title+* {
-        padding-top: 80px;
+        &+* {
+            padding-top: 80px;
+        }
     }
     .header__location {
         width: 80%;
