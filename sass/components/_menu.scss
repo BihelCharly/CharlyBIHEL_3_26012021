@@ -21,6 +21,17 @@
     z-index: 3;
 }
 
+.menu__title {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-right: 40px;
+    &>.far {
+        font-size: 2em;
+    }
+}
+
 .starters,
 .dishes,
 .desserts {
@@ -47,6 +58,10 @@
     a,
     a {
         width: 100%;
+        cursor: pointer;
+        &:hover {
+            @include shadow-under-lightGreen;
+        }
     }
 }
 
@@ -100,6 +115,13 @@
 }
 
 @media (min-width: 768px) {
+    .menu__title {
+        padding-left: 10px;
+        padding-right: 65px;
+        &>.far {
+            font-size: 4em;
+        }
+    }
     .starters,
     .dishes,
     .desserts {
@@ -127,6 +149,10 @@
             margin-top: -50px;
             padding-top: 10px;
         }
+        .menu__title {
+            padding-left: 40px;
+            padding-right: 60px;
+        }
         .menu-photo {
             z-index: inherit;
             & img {
@@ -151,5 +177,8 @@
     .dishes-card,
     .desserts-card {
         width: 70%;
+    }
+    .order-block {
+        padding-top: 40px;
     }
 }

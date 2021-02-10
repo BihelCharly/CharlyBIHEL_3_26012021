@@ -99,7 +99,7 @@ li {
 
   /* MENU TITLES STYLES & SIZES */
   .menu h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
   .menu h2 {
     font-size: 1.8em;
@@ -470,6 +470,13 @@ li {
   align-items: center;
   width: 80%;
 }
+.work-selection > a:hover {
+  background: rgba(147, 86, 220, 0.2);
+  box-shadow: 0px 5px 6px 0px lightgrey;
+}
+.work-selection > a:hover > i:hover {
+  color: #9356DC;
+}
 
 .selection__label {
   margin-right: -15px;
@@ -614,6 +621,17 @@ ul li {
   z-index: 3;
 }
 
+.menu__title {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-right: 40px;
+}
+.menu__title > .far {
+  font-size: 2em;
+}
+
 .starters,
 .dishes,
 .desserts {
@@ -649,6 +667,18 @@ ul li {
 .desserts-card a,
 .desserts-card a {
   width: 100%;
+  cursor: pointer;
+}
+.starters-card a:hover,
+.starters-card a:hover,
+.starters-card a:hover,
+.dishes-card a:hover,
+.dishes-card a:hover,
+.dishes-card a:hover,
+.desserts-card a:hover,
+.desserts-card a:hover,
+.desserts-card a:hover {
+  box-shadow: 0px 5px 6px 0px rgba(153, 226, 208, 0.8);
 }
 
 .starters__button,
@@ -732,6 +762,14 @@ ul li {
 }
 
 @media (min-width: 768px) {
+  .menu__title {
+    padding-left: 10px;
+    padding-right: 65px;
+  }
+  .menu__title > .far {
+    font-size: 4em;
+  }
+
   .starters,
 .dishes,
 .desserts {
@@ -761,6 +799,10 @@ ul li {
     margin-top: -50px;
     padding-top: 10px;
   }
+  .menu .menu__title {
+    padding-left: 40px;
+    padding-right: 60px;
+  }
   .menu .menu-photo {
     z-index: inherit;
   }
@@ -788,6 +830,10 @@ ul li {
 .dishes-card,
 .desserts-card {
     width: 70%;
+  }
+
+  .order-block {
+    padding-top: 40px;
   }
 }
 
