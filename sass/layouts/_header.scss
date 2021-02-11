@@ -42,6 +42,9 @@
 @media (min-width: 768px) {
     .header__title {
         padding: 20px 0 15px 0;
+        & .fa-arrow-left {
+            font-size: 1em;
+        }
     }
 }
 
@@ -58,5 +61,8 @@
     .header__location {
         width: 80%;
         margin: auto;
+        &>.fa-map-marker-alt:hover {
+            color: $third-color;
+        }
     }
 }

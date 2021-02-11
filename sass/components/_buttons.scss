@@ -20,7 +20,7 @@
 
 .button--lightPurple {
     border-radius: 20px;
-    background: rgba($primary-color, .1);
+    background: rgba($primary-color, .15);
     color: black;
     border: none;
     padding: 23px 32px;
@@ -43,14 +43,21 @@
 
 @media (min-width: 768px) {
     .button--grey {
-        padding: 27px 39px;
+        padding: 27px 32px;
         font-size: 19px;
         @include shadow-under-lightGrey;
+    }
+    .button--lightPurple {
+        padding: 27px 32px;
+        font-size: 19px;
+    }
+    .button--gradientPurple {
+        font-size: 20px;
     }
 }
 
 @media (min-width: 1025px) {
     .button--gradientPurple {
-        font-size: 30px;
+        font-size: 23px;
     }
 }

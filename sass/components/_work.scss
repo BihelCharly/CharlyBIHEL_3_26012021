@@ -14,13 +14,6 @@
     display: flex;
     align-items: center;
     width: 80%;
-    >a:hover {
-        background: rgba($primary-color, .2);
-        @include shadow-under-lightGrey;
-        >i:hover {
-            color: $primary-color;
-        }
-    }
 }
 
 .selection__label {
@@ -41,7 +34,7 @@
     justify-content: space-between;
     width: 100%;
      :nth-child(1) {
-        color: $darkgrey;
+        color: grey;
         width: 35px;
         text-align: center;
         margin-right: 10px;
@@ -50,6 +43,9 @@
         width: 90%;
         text-align: left;
         color: black;
+    }
+    .fa-store {
+        color: $primary-color;
     }
 }
 
@@ -86,9 +82,35 @@
 
 @media (min-width: 1025px) {
     .work-selection {
-        width: 45%;
+        width: 30%;
+        >a:hover {
+            background: rgba($primary-color, .2);
+            @include shadow-under-lightGrey;
+            >i {
+                color: $primary-color;
+            }
+        }
+    }
+    .selection__button {
+         :nth-child(1) {
+            font-size: 22px;
+            color: grey;
+            width: 100px;
+            text-align: center;
+            margin-right: 10px;
+        }
+        span:nth-child(2) {
+            font-size: 18px;
+            width: 90%;
+            text-align: left;
+            color: black;
+        }
+        .fa-store {
+            color: $primary-color;
+        }
     }
     .selection__label {
-        padding: 5px 11px 5px 11px;
+        font-size: 20px;
+        padding: 5px 12px 5px 12px;
     }
 }

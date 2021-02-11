@@ -1,6 +1,7 @@
 .section-menu {
     @include flex-column;
     width: 100%;
+    background-color: $background-secondary;
 }
 
 .menu-photo {
@@ -8,17 +9,17 @@
     z-index: 2;
     &>img {
         object-fit: cover;
-        height: 330px;
+        height: 320px;
         width: 100%;
     }
 }
 
 .menu-block {
-    background-color: $background-secondary;
     border-radius: 45px 45px 0 0;
     margin-top: -50px;
     padding-top: 10px;
     z-index: 3;
+    background-color: $background-secondary;
 }
 
 .menu__title {
@@ -27,42 +28,35 @@
     align-items: center;
     width: 100%;
     padding-right: 40px;
+    h1 {
+        font-size: 28px;
+    }
     &>.far {
         font-size: 2em;
     }
 }
 
+.cards {
+    @include flex-column;
+    justify-content: space-around;
+    align-items: center;
+    height: 270px;
+}
+
+.cards--xl {
+    height: 360px;
+}
+
 .starters,
 .dishes,
 .desserts {
-    height: 350px;
-    @include flex-column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 25px 0 25px 0;
-}
-
-.starters--xl {
-    height: 430px;
-    @include flex-column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 25px 0 25px 0;
+    margin-top: 30px;
 }
 
 .starters-card,
 .dishes-card,
 .desserts-card {
     width: 95%;
-    a,
-    a,
-    a {
-        width: 100%;
-        cursor: pointer;
-        &:hover {
-            @include shadow-under-lightGreen;
-        }
-    }
 }
 
 .starters__button,
@@ -84,6 +78,7 @@
     p,
     p,
     p {
+        white-space: nowrap;
         margin: 3px 0 3px 0;
         padding: 0;
     }
@@ -106,52 +101,41 @@
         grid-column: 2;
         grid-row: 2;
         color: $darkgrey;
+        text-align: center;
+        align-self: center;
     }
 }
 
 .order-block {
     text-align: center;
-    padding: 10px 0 80px 0;
+    margin: 40px 0 50px 0;
 }
 
 @media (min-width: 768px) {
     .menu__title {
         padding-left: 10px;
         padding-right: 65px;
+        h1 {
+            font-size: 52px;
+        }
         &>.far {
             font-size: 4em;
         }
     }
-    .starters,
-    .dishes,
-    .desserts {
-        height: 400px;
+    .cards {
+        height: 300px;
     }
-    .starters--xl {
-        height: 500px;
-        @include flex-column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 25px 0 25px 0;
+    .cards--xl {
+        height: 400px;
     }
 }
 
 @media (min-width: 1025px) {
     .menu {
-        width: 50%;
+        width: 80%;
         font-size: 0.6em;
         h3 {
             font-size: 1.2em;
-        }
-        .menu-block {
-            z-index: inherit;
-            border-radius: 0 0 0 0;
-            margin-top: -50px;
-            padding-top: 10px;
-        }
-        .menu__title {
-            padding-left: 40px;
-            padding-right: 60px;
         }
         .menu-photo {
             z-index: inherit;
@@ -160,25 +144,50 @@
                 height: 400px;
             }
         }
+        .menu-block {
+            z-index: inherit;
+            border-radius: 0 0 0 0;
+            margin-top: 0px;
+            padding-top: 10px;
+        }
+        .menu__title {
+            padding-left: 40px;
+            padding-right: 60px;
+        }
+    }
+    .menu-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: start;
+        width: 100%;
+    }
+    .cards {
+        height: 300px;
+    }
+    .cards--xl {
+        height: 400px;
     }
     .starters,
     .dishes,
     .desserts {
-        height: 340px;
-    }
-    .starters--xl {
-        height: 430px;
-        @include flex-column;
-        justify-content: space-around;
-        align-items: center;
-        margin: 25px 0 25px 0;
+        width: 100%;
     }
     .starters-card,
     .dishes-card,
     .desserts-card {
-        width: 70%;
+        width: 90%;
+        a,
+        a,
+        a {
+            width: 100%;
+            cursor: pointer;
+            &:hover {
+                @include shadow-under-lightGreen;
+            }
+        }
     }
     .order-block {
-        padding-top: 40px;
+        margin: 70px 0 60px 0;
     }
 }
