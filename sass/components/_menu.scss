@@ -57,6 +57,23 @@
 .dishes-card,
 .desserts-card {
     width: 95%;
+    position: relative;
+    /* MENUS SHOW UP */
+    transform-origin: bottom;
+    animation: myMoove 3s ease-in;
+    @keyframes myMoove {
+        from {
+            top: 50px;
+            opacity: 0;
+        }
+        40% {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+            top: 0px;
+        }
+    }
 }
 
 .starters__button,

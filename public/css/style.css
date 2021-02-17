@@ -169,13 +169,30 @@ li {
   font-style: normal;
 }
 .button--gradientPurple {
+  box-shadow: 0px 5px 6px 0px lightgrey;
   border-radius: 25px;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  background: linear-gradient(0deg, #9356DC 10%, #FF79DA 100%);
   color: white;
   border: none;
   padding: 15px 32px;
   font-size: 16px;
-  box-shadow: 0px 5px 6px 0px lightgrey;
+  position: relative;
+  z-index: 1;
+}
+.button--gradientPurple:hover .btn__bg {
+  opacity: 1;
+}
+.button--gradientPurple .btn__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 25px;
+  background-color: #ff7edb;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 200ms;
 }
 
 .button--grey {
@@ -710,6 +727,23 @@ ul li {
 .dishes-card,
 .desserts-card {
   width: 95%;
+  position: relative;
+  /* MENUS SHOW UP */
+  transform-origin: bottom;
+  animation: myMoove 3s ease-in;
+}
+@keyframes myMoove {
+  from {
+    top: 50px;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    top: 0px;
+  }
 }
 
 .starters__button,
