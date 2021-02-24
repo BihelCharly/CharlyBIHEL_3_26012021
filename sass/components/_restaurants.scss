@@ -137,11 +137,32 @@
         padding-left: 20px;
         margin: -5px 0 0 0;
         order: 2;
+        animation: labelShowDown 3.5s;
+        @keyframes labelShowDown {
+            0% {
+                opacity: 0;
+            }
+            70% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
     }
     .card__photo {
         order: 1;
         img {
             height: 260px;
+            animation: imgShowUp 3s;
+            @keyframes imgShowUp {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
+            }
         }
     }
     .card__description {

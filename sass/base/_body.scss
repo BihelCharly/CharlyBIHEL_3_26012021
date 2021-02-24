@@ -13,6 +13,18 @@ body {
     background-color: white;
     overflow-y: scroll;
     overflow-x: hidden;
+    animation: scrollbarShowUp 2.3s;
+    @keyframes scrollbarShowUp {
+        0% {
+            overflow-y: hidden;
+        }
+        90% {
+            overflow-y: hidden;
+        }
+        100% {
+            overflow-y: scroll;
+        }
+    }
 }
 
 section,
