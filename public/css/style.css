@@ -174,23 +174,25 @@ li {
   z-index: 0;
   opacity: 1;
   position: absolute;
-  -webkit-text-stroke: 3px black;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
+  -webkit-text-stroke: 2px black;
 }
 .fa-heart::after {
   content: "";
-  z-index: 1;
+  z-index: 2;
   opacity: 0;
-  position: absolute;
-  background: -webkit-linear-gradient(0deg, #9356DC 10%, #FF79DA 100%);
-  background: -o-linear-gradient(0deg, #9356DC 10%, #FF79DA 100%);
+  position: relative;
+  background: -webkit-linear-gradient(-90deg, #9356DC 10%, #FF79DA 80%);
+  background: -o-linear-gradient(-90deg, #9356DC 10%, #FF79DA 80%);
   background-clip: text;
+  -webkit-background-clip: text;
   -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
   -moz-text-fill-color: transparent;
-  -webkit-text-stroke: 3px black;
+  -webkit-text-stroke: 2px black;
+  /* FALLBACK COLOR */
+  background-color: #9356DC;
 }
 .fa-heart:hover::after {
   opacity: 1;
