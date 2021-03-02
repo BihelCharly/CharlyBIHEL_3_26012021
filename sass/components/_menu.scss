@@ -171,7 +171,6 @@
             }
         }
         &:hover {
-            & .price {}
             & .selected {
                 visibility: visible;
                 position: relative;
@@ -302,7 +301,7 @@
         .starters,
         .dishes,
         .desserts {
-            width: 100%;
+            width: 33%;
             margin-top: 0px;
         }
         .starters-card,

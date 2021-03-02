@@ -35,7 +35,7 @@
 }
 
 .card__label {
-    color: green;
+    color: $fourth-color;
     background-color: $third-color;
     padding: 2px 10px 2px 10px;
     border: solid transparent 1px;
@@ -114,6 +114,12 @@
             margin-top: 10px;
             margin-bottom: 20px;
             width: 100%;
+        }
+    }
+    .card-container {
+        &:hover {
+            transition: all 2s;
+            @include shadow-under-grey;
         }
     }
     .card1,
