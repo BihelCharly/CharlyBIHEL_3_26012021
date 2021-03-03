@@ -82,7 +82,7 @@
             }
         }
         
-        @media (min-width: 1600px) {
+        @media (min-width: 1025px) {
             .list {
                 @include flex-row;
                 justify-content: space-evenly;
